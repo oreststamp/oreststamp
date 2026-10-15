@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -10 100 110" width="100" height="110">
+  <style>
+    .bunny { transform-origin: 50px 88px; animation: jump 1.2s ease-in-out infinite; }
+    .earL { transform-origin: 40px 29px; animation: flapL 1.2s linear infinite; }
+    .earR { transform-origin: 60px 29px; animation: flapR 1.2s linear infinite; }
+    .shadow { transform-origin: 50px 90px; animation: shadow 1.2s ease-in-out infinite; }
+    .eye { transform-box: fill-box; transform-origin: center; animation: blink 3.6s infinite; }
+    .whiskL { transform-origin: 46px 50px; animation: twitchL 3.6s ease-in-out infinite; }
+    .whiskR { transform-origin: 54px 50px; animation: twitchR 3.6s ease-in-out infinite; }
+    @keyframes twitchL {
+      0%, 60%, 100% { transform: rotate(0deg); }
+      66% { transform: rotate(-5deg); }
+      72% { transform: rotate(3deg); }
+      78% { transform: rotate(0deg); }
+    }
+    @keyframes twitchR {
+      0%, 60%, 100% { transform: rotate(0deg); }
+      66% { transform: rotate(5deg); }
+      72% { transform: rotate(-3deg); }
+      78% { transform: rotate(0deg); }
+    }
+
+    @keyframes jump {
+      0%, 100% { transform: translateY(0) scale(1.06, 0.94); }
+      15%      { transform: translateY(0) scale(0.96, 1.06); }
+      50%      { transform: translateY(-22px) scale(0.97, 1.04); }
+      85%      { transform: translateY(0) scale(1, 1); }
+    }
+    @keyframes flapL {
+      0.00% { transform: rotate(7.59deg); }
+      1.67% { transform: rotate(7.40deg); }
+      3.33% { transform: rotate(6.93deg); }
+      5.00% { transform: rotate(6.36deg); }
+      6.67% { transform: rotate(5.85deg); }
+      8.33% { transform: rotate(5.51deg); }
+      10.00% { transform: rotate(5.36deg); }
+      11.67% { transform: rotate(5.39deg); }
+      13.33% { transform: rotate(5.53deg); }
+      15.00% { transform: rotate(5.74deg); }
+      16.67% { transform: rotate(5.90deg); }
+      18.33% { transform: rotate(5.85deg); }
+      20.00% { transform: rotate(5.46deg); }
+      21.67% { transform: rotate(4.73deg); }
+      23.33% { transform: rotate(3.66deg); }
+      25.00% { transform: rotate(2.33deg); }
+      26.67% { transform: rotate(0.81deg); }
+      28.33% { transform: rotate(-0.81deg); }
+      30.00% { transform: rotate(-2.43deg); }
+      31.67% { transform: rotate(-3.95deg); }
+      33.33% { transform: rotate(-5.29deg); }
+      35.00% { transform: rotate(-6.36deg); }
+      36.67% { transform: rotate(-7.08deg); }
+      38.33% { transform: rotate(-7.43deg); }
+      40.00% { transform: rotate(-7.36deg); }
+      41.67% { transform: rotate(-6.89deg); }
+      43.33% { transform: rotate(-6.05deg); }
+      45.00% { transform: rotate(-4.89deg); }
+      46.67% { transform: rotate(-3.50deg); }
+      48.33% { transform: rotate(-1.93deg); }
+      50.00% { transform: rotate(-0.27deg); }
+      51.67% { transform: rotate(1.44deg); }
+      53.33% { transform: rotate(3.15deg); }
+      55.00% { transform: rotate(4.85deg); }
+      56.67% { transform: rotate(6.54deg); }
+      58.33% { transform: rotate(8.22deg); }
+      60.00% { transform: rotate(9.91deg); }
+      61.67% { transform: rotate(11.58deg); }
+      63.33% { transform: rotate(13.23deg); }
+      65.00% { transform: rotate(14.81deg); }
+      66.67% { transform: rotate(16.27deg); }
+      68.33% { transform: rotate(17.54deg); }
+      70.00% { transform: rotate(18.54deg); }
+      71.67% { transform: rotate(19.22deg); }
+      73.33% { transform: rotate(19.51deg); }
+      75.00% { transform: rotate(19.41deg); }
+      76.67% { transform: rotate(18.92deg); }
+      78.33% { transform: rotate(18.06deg); }
+      80.00% { transform: rotate(16.90deg); }
+      81.67% { transform: rotate(15.49deg); }
+      83.33% { transform: rotate(13.92deg); }
+      85.00% { transform: rotate(12.25deg); }
+      86.67% { transform: rotate(6.31deg); }
+      88.33% { transform: rotate(2.78deg); }
+      90.00% { transform: rotate(1.52deg); }
+      91.67% { transform: rotate(1.96deg); }
+      93.33% { transform: rotate(3.35deg); }
+      95.00% { transform: rotate(5.00deg); }
+      96.67% { transform: rotate(6.41deg); }
+      98.33% { transform: rotate(7.29deg); }
+      100.00% { transform: rotate(7.59deg); }
+    }
+    @keyframes flapR {
+      0.00% { transform: rotate(-7.59deg); }
+      1.67% { transform: rotate(-7.40deg); }
+      3.33% { transform: rotate(-6.93deg); }
+      5.00% { transform: rotate(-6.36deg); }
+      6.67% { transform: rotate(-5.85deg); }
+      8.33% { transform: rotate(-5.51deg); }
+      10.00% { transform: rotate(-5.36deg); }
+      11.67% { transform: rotate(-5.39deg); }
+      13.33% { transform: rotate(-5.53deg); }
+      15.00% { transform: rotate(-5.74deg); }
+      16.67% { transform: rotate(-5.90deg); }
+      18.33% { transform: rotate(-5.85deg); }
+      20.00% { transform: rotate(-5.46deg); }
+      21.67% { transform: rotate(-4.73deg); }
+      23.33% { transform: rotate(-3.66deg); }
+      25.00% { transform: rotate(-2.33deg); }
+      26.67% { transform: rotate(-0.81deg); }
+      28.33% { transform: rotate(0.81deg); }
+      30.00% { transform: rotate(2.43deg); }
+      31.67% { transform: rotate(3.95deg); }
+      33.33% { transform: rotate(5.29deg); }
+      35.00% { transform: rotate(6.36deg); }
+      36.67% { transform: rotate(7.08deg); }
+      38.33% { transform: rotate(7.43deg); }
+      40.00% { transform: rotate(7.36deg); }
+      41.67% { transform: rotate(6.89deg); }
+      43.33% { transform: rotate(6.05deg); }
+      45.00% { transform: rotate(4.89deg); }
+      46.67% { transform: rotate(3.50deg); }
+      48.33% { transform: rotate(1.93deg); }
+      50.00% { transform: rotate(0.27deg); }
+      51.67% { transform: rotate(-1.44deg); }
+      53.33% { transform: rotate(-3.15deg); }
+      55.00% { transform: rotate(-4.85deg); }
+      56.67% { transform: rotate(-6.54deg); }
+      58.33% { transform: rotate(-8.22deg); }
+      60.00% { transform: rotate(-9.91deg); }
+      61.67% { transform: rotate(-11.58deg); }
+      63.33% { transform: rotate(-13.23deg); }
+      65.00% { transform: rotate(-14.81deg); }
+      66.67% { transform: rotate(-16.27deg); }
+      68.33% { transform: rotate(-17.54deg); }
+      70.00% { transform: rotate(-18.54deg); }
+      71.67% { transform: rotate(-19.22deg); }
+      73.33% { transform: rotate(-19.51deg); }
+      75.00% { transform: rotate(-19.41deg); }
+      76.67% { transform: rotate(-18.92deg); }
+      78.33% { transform: rotate(-18.06deg); }
+      80.00% { transform: rotate(-16.90deg); }
+      81.67% { transform: rotate(-15.49deg); }
+      83.33% { transform: rotate(-13.92deg); }
+      85.00% { transform: rotate(-12.25deg); }
+      86.67% { transform: rotate(-6.31deg); }
+      88.33% { transform: rotate(-2.78deg); }
+      90.00% { transform: rotate(-1.52deg); }
+      91.67% { transform: rotate(-1.96deg); }
+      93.33% { transform: rotate(-3.35deg); }
+      95.00% { transform: rotate(-5.00deg); }
+      96.67% { transform: rotate(-6.41deg); }
+      98.33% { transform: rotate(-7.29deg); }
+      100.00% { transform: rotate(-7.59deg); }
+    }
+    @keyframes shadow {
+      0%, 100% { transform: scale(1.05); opacity: 0.25; }
+      50%      { transform: scale(0.6); opacity: 0.12; }
+    }
+    @keyframes blink {
+      0%, 92%, 100% { transform: scaleY(1); }
+      95%           { transform: scaleY(0.1); }
+    }
+  </style>
+
+  <defs>
+    <clipPath id="headClip"><ellipse cx="50" cy="40" rx="21" ry="18.5"/></clipPath>
+    <clipPath id="bodyClip"><ellipse cx="50" cy="72" rx="16" ry="15"/></clipPath>
+  </defs>
+
+  <ellipse class="shadow" cx="50" cy="90" rx="18" ry="3" fill="#000" opacity="0.25"/>
+
+  <g class="bunny" stroke-linejoin="round">
+    <!-- floppy ears (behind head) -->
+    <g class="earL">
+      <path d="M41 28 C32 24 20 34 20 50 C20 62 24 70 29 69 C35 68 36 56 36 44 C36 36 39 32 41 28 Z" fill="#A5958B" stroke="#6E6560" stroke-width="1.2"/>
+      <path d="M38 33 C31 33 25 41 25 52 C25 60 27 64 29 63.5 C32 63 33 55 33 46 C33 40 35 36 38 33 Z" fill="#C9A9A0" opacity="0.55"/>
+    </g>
+    <g class="earR">
+      <path d="M59 28 C68 24 80 34 80 50 C80 62 76 70 71 69 C65 68 64 56 64 44 C64 36 61 32 59 28 Z" fill="#A5958B" stroke="#6E6560" stroke-width="1.2"/>
+      <path d="M62 33 C69 33 75 41 75 52 C75 60 73 64 71 63.5 C68 63 67 55 67 46 C67 40 65 36 62 33 Z" fill="#C9A9A0" opacity="0.55"/>
+    </g>
+
+    <!-- tail, body, arms, feet -->
+    <circle cx="67" cy="79" r="4.5" fill="#DDBE92" stroke="#5A4333" stroke-width="0.8"/>
+    <ellipse cx="50" cy="72" rx="16" ry="15" fill="#8A6A4F" stroke="#5A4333" stroke-width="0.8"/>
+    <g clip-path="url(#bodyClip)">
+      <path d="M32 64 L37 61 L40 65 L38 69 L41 72 L36 74 L33 71 L31 68 Z" fill="#DDBE92" stroke="#DDBE92" stroke-width="1.3" stroke-linejoin="round"/>
+      <path d="M61 75 L66 73 L69 77 L67 81 L69 85 L63 86 L60 82 Z" fill="#DDBE92" stroke="#DDBE92" stroke-width="1.3" stroke-linejoin="round"/>
+    </g>
+    <ellipse cx="50" cy="75" rx="8.5" ry="8.5" fill="#A0805F"/>
+    <g clip-path="url(#bodyClip)">
+      <path d="M43.5 75 C45.5 70.5 52 71.5 53 77 C54 82.5 50 85.5 45.5 83.5 C41.5 81.5 41.5 78 43.5 75 Z" fill="#DDBE92" stroke="#DDBE92" stroke-width="1.3" stroke-linejoin="round"/>
+    </g>
+    <ellipse cx="36" cy="71" rx="4" ry="6" fill="#8A6A4F" stroke="#5A4333" stroke-width="0.8"/>
+    <ellipse cx="64" cy="71" rx="4" ry="6" fill="#8A6A4F" stroke="#5A4333" stroke-width="0.8"/>
+    <ellipse cx="40" cy="86" rx="7" ry="3.5" fill="#8A6A4F" stroke="#5A4333" stroke-width="0.8"/>
+    <ellipse cx="60" cy="86" rx="7" ry="3.5" fill="#8A6A4F" stroke="#5A4333" stroke-width="0.8"/>
+    <path d="M35 86 L38 84.5 L41 86 L39 88 L36 88 Z" fill="#DDBE92" stroke="#DDBE92" stroke-width="1.3" stroke-linejoin="round"/>
+
+    <g transform="translate(50 58) scale(0.88) translate(-50 -58)">
+    <!-- head -->
+    <ellipse cx="50" cy="40" rx="21" ry="18.5" fill="#8A6A4F" stroke="#5A4333" stroke-width="0.8"/>
+    <g clip-path="url(#headClip)">
+      <path d="M32 27 L35 22 L39 24 L42 20 L47 23 L49 21 L51 26 L48 29 L50 33 L45 35 L43 32 L40 37 L36 34 L33 36 L30 32 Z" fill="#DDBE92" stroke="#DDBE92" stroke-width="1.3" stroke-linejoin="round"/>
+      <path d="M58 24 L62 21 L66 24 L65 28 L68 31 L63 32 L60 29 Z" fill="#DDBE92" stroke="#DDBE92" stroke-width="1.3" stroke-linejoin="round"/>
+    </g>
+
+    <!-- face -->
+    <circle class="eye" cx="41" cy="42" r="2.6" fill="#2B1B12"/>
+    <circle class="eye" cx="59" cy="42" r="2.6" fill="#2B1B12"/>
+    <circle class="eye" cx="42" cy="41" r="0.9" fill="#FFFFFF"/>
+    <circle class="eye" cx="60" cy="41" r="0.9" fill="#FFFFFF"/>
+    <circle cx="36.5" cy="49" r="3" fill="#F4A0A8" opacity="0.5"/>
+    <circle cx="63.5" cy="49" r="3" fill="#F4A0A8" opacity="0.5"/>
+    <ellipse cx="50" cy="49" rx="8.5" ry="6.2" fill="#DDBE92"/>
+    <ellipse cx="50" cy="47" rx="2.6" ry="1.9" fill="#D9777F"/>
+    <g class="whiskL" stroke="#3A2A20" stroke-width="0.7" stroke-linecap="round" fill="none">
+      <path d="M45.5 48.5 C42 45.5 38 45 34.5 48"/>
+      <path d="M45 50.5 C41.5 49 37.5 50 34 53.5"/>
+      <path d="M45.5 52.5 C42 53 38.5 54.5 35.5 58"/>
+    </g>
+    <g class="whiskR" stroke="#3A2A20" stroke-width="0.7" stroke-linecap="round" fill="none">
+      <path d="M54.5 48.5 C58 45.5 62 45 65.5 48"/>
+      <path d="M55 50.5 C58.5 49 62.5 50 66 53.5"/>
+      <path d="M54.5 52.5 C58 53 61.5 54.5 64.5 58"/>
+    </g>
+    <path d="M50 49 v1.8 M50 50.8 q-3 2.6 -6 0 M50 50.8 q3 2.6 6 0" stroke="#2B1B12" stroke-width="1" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
