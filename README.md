@@ -1,16 +1,18 @@
-## Hi there 👋
+## Hi, I'm Orestis 👋
 
-<!--
-**oreststamp/oreststamp** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I build and document hands-on projects in **infrastructure automation** and **security and identity**, mostly on Azure and Linux.
 
-Here are some ideas to get you started:
+### Tools I work with
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+![Skills](https://skillicons.dev/icons?i=azure,docker,linux,bash,githubactions,python,git&theme=dark)
+
+### Projects
+
+**[azure-hybrid-wireguard-local-llm](https://github.com/oreststamp/azure-hybrid-wireguard-local-llm)**
+Azure identity, monitoring and Key Vault joined to a home GPU LLM through a WireGuard tunnel, with HTTPS via Caddy and RBAC least privilege.
+
+**[azure-secure-network-architecture](https://github.com/oreststamp/azure-secure-network-architecture)**
+Security-first Azure architecture: private SQL endpoint, Managed Identity, Key Vault and GitHub Actions CI/CD, demonstrated with a URL shortener.
+
+**[docker-image-security-pipeline](https://github.com/oreststamp/docker-image-security-pipeline)**
+Bash and Trivy audit of Docker images for CVEs, root user, exposed ports and image age, enforced as a failing GitHub Actions check.
