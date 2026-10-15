@@ -1,4 +1,4 @@
-## Hi, I'm Orestis 
+## Hi, I'm Orestis 👋
 
 I build and document hands-on projects in **infrastructure automation** and **security and identity**, mostly on Azure and Linux.
 
