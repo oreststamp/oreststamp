@@ -1,4 +1,4 @@
-## Hi, I'm Orestis <img src="https://raw.githubusercontent.com/oreststamp/oreststamp/main/bunny (4).svg" width="48" align="center">
+## Hi, I'm Orestis <img src="https://raw.githubusercontent.com/oreststamp/oreststamp/main/bunny (5).svg" width="48" align="center">
 I build and document hands-on projects in **infrastructure automation** and **security and identity**, mostly on Azure and Linux.
 
 ### Tools I work with
